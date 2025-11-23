@@ -42,7 +42,7 @@ Repositório dedicado a atividade de prática da linguagem Ruby
   - Criação e manipulação de objetos
   - Interpolação de strings
 
-### 5. **Autenticação com BCrypt** (`bcrypt.rb`)
+### 5. **Autenticação com BCrypt** (`bcrypt_crud.rb`)
 - **Conceitos abordados:**
   - Módulos (`module`)
   - Gem BCrypt para hash de senhas
@@ -52,12 +52,58 @@ Repositório dedicado a atividade de prática da linguagem Ruby
   - Funções para criação e verificação de hash
   - Iteração e transformação de dados
 
+### 6. **Arrays Completo** (`arrays.rb`)
+- **Conceitos abordados:**
+  - **Criação de arrays:** literal, `Array.new`, ranges, `%w[]`
+  - **Acesso a elementos:** índices positivos/negativos, `first`, `last`, ranges
+  - **Manipulação:** `push`, `pop`, `shift`, `unshift`, `delete`, `delete_at`
+  - **Consulta:** `size`, `length`, `empty?`, `include?`, `index`, `count`
+  - **Iteração:** `each`, `each_with_index`, `reverse_each`
+  - **Transformação:** `map`, `collect`, `select`, `reject`, `compact`, `uniq`, `flatten`
+  - **Redução:** `reduce`, `inject`, `sum`, `min`, `max`, `minmax`
+  - **Ordenação:** `sort`, `sort_by`, `reverse`
+  - **Combinação:** `+`, `|`, `&`, `-`, `zip`
+  - **Métodos booleanos:** `all?`, `any?`, `none?`, `one?`
+  - **Particionamento:** `partition`, `group_by`, `take`, `drop`, `take_while`, `drop_while`
+  - **Conversão:** `join`, `to_h`, `to_s`, `inspect`
+  - **Métodos avançados:** `sample`, `shuffle`, `rotate`, `transpose`, `combination`, `permutation`
+  - **Modificação in-place:** métodos com `!` (`sort!`, `map!`, `reverse!`, etc.)
+  - **Exemplo prático:** processamento de dados de vendas
+
+### 7. **Expressões Regulares** (`regex.rb`)
+- **Conceitos abordados:**
+  - Regex básico em Ruby
+  - Pattern matching
+  - Validação de formatos
+
 ## Tecnologias e Conceitos Gerais Abordados
 - **Ruby básico:** sintaxe, tipos de dados, operadores
 - **Estruturas de controle:** loops, condicionais, iteradores
-- **Estruturas de dados:** Arrays, Hashes, Classes
+- **Estruturas de dados:** Arrays (15+ métodos), Hashes, Classes
 - **Programação orientada a objetos:** classes, objetos, atributos
+- **Programação funcional:** `map`, `reduce`, `select`, `reject`, blocks
 - **Modularização:** funções, métodos, módulos
 - **Segurança:** hash de senhas, entrada segura
 - **Boas práticas:** organização de código, reutilização
 - **Bibliotecas externas:** BCrypt, IO::Console
+- **Manipulação de dados:** transformação, filtragem, agregação, ordenação
+
+## Como Executar
+```bash
+# Executar qualquer arquivo
+ruby nome_do_arquivo.rb
+
+# Exemplos:
+ruby arrays.rb          # Demonstração completa de arrays
+ruby oop.rb            # Exemplos de OOP
+ruby bcrypt_crud.rb    # Sistema com BCrypt
+```
+
+## Recursos de Aprendizado
+Este repositório cobre desde conceitos básicos até intermediários de Ruby, incluindo:
+- ✅ Sintaxe e estruturas básicas
+- ✅ Estruturas de dados (Arrays com 60+ exemplos práticos)
+- ✅ Programação Orientada a Objetos
+- ✅ Autenticação e Segurança
+- ✅ Manipulação e transformação de dados
+- ✅ Expressões regulares

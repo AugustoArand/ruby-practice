@@ -9,15 +9,15 @@ module Crud # Transformando em módulo para ser reutilizado
   ]
 
   # EXEMPLO CRUD - Utilizando o bcrypt para hashear senhas de usuários
-  def create_hash_digest(password)
+  def Crud.create_hash_digest(password)
     BCrypt::Password.create(password)
   end
 
-  def verify_hash_digest(password)
+  def Crud.verify_hash_digest(password)
     BCrypt::Password.new(password)
   end
 
-  def create_secure_users(list_users)
+  def Crud.create_secure_users(list_users)
     list_users.each do |user_record|
       user_record[:password] = create_hash_digest(user_record[:password])
     end
